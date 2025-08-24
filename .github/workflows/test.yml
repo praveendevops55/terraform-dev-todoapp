@@ -1,0 +1,12 @@
+on: 
+ push:
+   branches:
+     - 'main'
+     - 'features/**'
+
+jobs:
+  dhondhu:
+     name: test
+     runs-on: testrunner
+     steps:
+     - run: echo Hello world!
